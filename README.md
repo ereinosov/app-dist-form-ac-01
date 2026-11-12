@@ -13,7 +13,7 @@ Fuente principal: informe oficial de AWS, https://aws.amazon.com/message/41926/
 |---|---|
 | García Bazurto Kevin Leonel | yaser-uwu |
 | Lombeida Escaleras Bryan Humberto | BryanLomb |
-| Manotoa Alava Carlos Alexander | CarlosManotoa007) |
+| Manotoa Alava Carlos Alexander | CarlosManotoa007 |
 | Reinoso Vélez Eduardo David | ereinosov |
 
 ## Estructura

@@ -1,0 +1,148 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{csquotes}
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[backend=biber,style=ieee]{biblatex}
+\usepackage[hidelinks]{hyperref}
+\addbibresource{referencias.bib}
+
+\newcommand{\cvLL}{\fontsize{17.28}{21}\selectfont}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\begin{document}
+	
+	% ---------- Caratula ----------
+	\newgeometry{margin=2.5cm}
+	\begin{titlepage}
+		\begin{center}
+			\fontsize{14.4}{20}\selectfont
+			\vspace*{0.3cm}
+			{\cvLL\bfseries UNIVERSIDAD T\'ECNICA ESTATAL DE QUEVEDO}\\[6pt]
+			Facultad de Ciencias de la Computaci\'on\\[4pt]
+			Carrera de Software
+			\par\vfill
+			
+			Asignatura: Aplicaciones Distribuidas (ISR-701)\\[0.8cm]
+			{\bfseries Actividad:}\\[4pt]
+			FORM-AC-01 -- An\'alisis de Caso:\\
+			Fallo Real en un Sistema Distribuido\\[4pt]
+			Caso asignado: Amazon S3, regi\'on US-EAST-1\\
+			(28 de febrero de 2017)
+			\par\vfill
+			
+			{\bfseries Grupo GLMR -- Integrantes:}\\[6pt]
+			Garc\'ia Bazurto Kevin Leonel\\
+			{\fontsize{12}{16}\selectfont PFC: {[PENDIENTE]}}\\[6pt]
+			Lombeida Escaleras Bryan Humberto\\
+			{\fontsize{12}{16}\selectfont PFC: {[PENDIENTE]}}\\[6pt]
+			Manotoa Alava Carlos Alexander\\
+			{\fontsize{12}{16}\selectfont PFC: {[PENDIENTE]}}\\[6pt]
+			Reinoso V\'elez Eduardo David\\
+			{\fontsize{12}{16}\selectfont PFC: SSDC (Sistema de Selecci\'on Docente y Convocatorias)}
+			\par\vfill
+			
+			Nivel: S\'eptimo\\[4pt]
+			Paralelo: A\\[4pt]
+			Fecha: 14 de noviembre de 2026
+			\par\vfill
+			
+			{\bfseries Repositorio del trabajo:}\\[8pt]
+			\adjustbox{max width=\linewidth}{\url{https://github.com/ereinosov/app-dist-form-ac-01}}
+			\vspace*{0.3cm}
+		\end{center}
+	\end{titlepage}
+	\restoregeometry
+	
+	% ---------- Contenido ----------
+	\section{Descripci\'on del incidente}
+	Fuente principal: informe oficial de AWS~\cite{aws-s3-2017}. {[PENDIENTE]}
+	
+	\begin{table}[h]
+		\centering
+		\small
+		\begin{tabularx}{\linewidth}{@{}llX@{}}
+			\toprule
+			Hora (PST) & Hora (UTC) & Evento \\
+			\midrule
+			{[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} \\
+			{[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} \\
+			{[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} \\
+			{[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} \\
+			{[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} \\
+			{[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} \\
+			\bottomrule
+		\end{tabularx}
+		\caption{L\'inea de tiempo del incidente.}
+	\end{table}
+	
+	\section{Causas ra\'iz}
+	\begin{figure}[h]
+		\centering
+		\IfFileExists{diagramas/causas.pdf}{\includegraphics[width=\linewidth]{diagramas/causas.pdf}}{\fbox{[PENDIENTE: diagrama de causas]}}
+		\caption{Diagrama de causas del incidente (elaboraci\'on propia).}
+	\end{figure}
+	{[PENDIENTE]}
+	
+	\section{Impacto cuantificado}
+	{[PENDIENTE]}
+	
+	\section{Relaci\'on con la Unidad 1}
+	\textbf{Transparencia de distribuci\'on rota.} {[PENDIENTE]}
+	
+	\textbf{Teorema CAP.} {[PENDIENTE]}
+	
+	\textbf{Tolerancia a fallos.} {[PENDIENTE]}
+	
+	\section{Mitigaci\'on aplicada por la empresa}
+	\textbf{Medidas inmediatas.} {[PENDIENTE]}
+	
+	\textbf{Cambios permanentes.} {[PENDIENTE]}
+	
+	\section{Lecciones para el proyecto propio}
+	\begin{table}[h]
+		\centering
+		\scriptsize
+		\begin{tabularx}{\linewidth}{@{}p{2.0cm}p{2.0cm}XXXX@{}}
+			\toprule
+			PFC / integrante & Componente & Escenario de fallo & Relaci\'on con el caso & Medida para TA-PFC-E1 & C\'omo se verificar\'a \\
+			\midrule
+			{[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} \\
+			{[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} \\
+			{[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} \\
+			{[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} \\
+			\bottomrule
+		\end{tabularx}
+		\caption{Riesgos concretos del PFC derivados del caso.}
+	\end{table}
+	
+	% ---------- Fuera de las 2 paginas ----------
+	\clearpage
+	\section*{Tabla de retroalimentaci\'on incorporada}
+	\begin{tabularx}{\linewidth}{@{}p{0.6cm}p{2.7cm}XX@{}}
+		\toprule
+		N. & Origen & Observaci\'on recibida & Cambio realizado o raz\'on para no aplicarlo \\
+		\midrule
+		1 & {[PENDIENTE]} & {[PENDIENTE]} & {[PENDIENTE]} \\
+		\bottomrule
+	\end{tabularx}
+	
+	\section*{Declaraci\'on de uso de inteligencia artificial}
+	\begin{tabularx}{\linewidth}{@{}p{3cm}X@{}}
+		\toprule
+		Herramienta y versi\'on & {[PENDIENTE]} \\
+		Para qu\'e se us\'o & {[PENDIENTE]} \\
+		C\'omo se verific\'o lo obtenido & {[PENDIENTE]} \\
+		\bottomrule
+	\end{tabularx}
+	
+	\printbibliography[title={Referencias}]
+	
+\end{document}
